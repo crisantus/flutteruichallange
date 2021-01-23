@@ -23,11 +23,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
-
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.0
+  flutter_bloc: ^6.1.1
+  kf_drawer: ^1.1.2
   page_transition: ^1.1.7+2
   simple_animations: ^2.3.0
 
@@ -37,7 +35,6 @@ dev_dependencies:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
-
 # The following section is specific to Flutter.
 flutter:
 
@@ -63,30 +60,33 @@ flutter:
     - assets/images/emma-1.jpg
     - assets/images/emma-2.jpg
     - assets/images/emma-3.jpg
+    - assets/images/illustration.png
+    - assets/images/stepone.png
+    - assets/images/step-three.png
+    - assets/images/background.png
+    - assets/images/step-two.png
   #   - images/a_dot_ham.jpeg
-
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
-
   # For details regarding adding assets from package dependencies, see
   # https://flutter.dev/assets-and-images/#from-packages
-
   # To add custom fonts to your application, add a fonts section here,
   # in this "flutter" section. Each entry in this list should have a
   # "family" key with the font family name, and a "fonts" key with a
   # list giving the asset and other descriptors for the font. For
   # example:
   # fonts:
-  #   - family: Schyler
+  #   - family: Roboto
   #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
+  #       - asset: fonts/Roboto-Regular.ttf
+  #       # - asset: fonts/Roboto-Italic.ttf
+  #       # - asset: font/Roboto-black.ttf
+  #   #         style: italic
+  #   - family: Nunito
   #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
+  #       - asset: fonts/Nunito-Regular.ttf
+  #       - asset: fonts/Nunito-Bold.ttf
+  #       - asset: fonts/Nunito-Black
   #         weight: 700
-  #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

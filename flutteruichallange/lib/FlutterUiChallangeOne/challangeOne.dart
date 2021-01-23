@@ -38,7 +38,8 @@ class _UIchallangeOneIState extends State<UIchallangeOneI> {
                     children: [
                       Text("Find Your", style: TextStyle(color: Colors.black87,fontSize: 25),),
                       SizedBox(height: 5,),
-                      Text("Inspiration",style: TextStyle(color: Colors.black, fontSize: 40,fontWeight:FontWeight.bold),),
+                      Text("Inspiration",style: TextStyle(color: Colors.red, 
+                      fontSize: 40,fontWeight:FontWeight.bold),),
                       Container(
                         padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(

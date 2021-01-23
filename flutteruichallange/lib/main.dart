@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'FlutterUiChallangeOne/challangeOne.dart';
+
 void main() {
   runApp(MyApp());
 }
@@ -11,11 +12,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'UI challange',
-      theme: ThemeData(
-        fontFamily: 'Nunito'
-      ),
+      // theme: ThemeData(
+      //   fontFamily: 'Nunito'
+      // ),
       home: UIchallangeOneI(),
     );
   }
 }
-

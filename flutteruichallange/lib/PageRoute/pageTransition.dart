@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutteruichallange/BottomNavigation/navigation.dart';
 import 'package:page_transition/page_transition.dart';
 
 class MyHomePage extends StatelessWidget {
@@ -13,8 +14,8 @@ class MyHomePage extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 20),
               child: GestureDetector(
                   onTap: () {
-                    // Navigator.of(context)
-                    //     .push(MaterialPageRoute(builder: (context) => DrawerablePage()));
+                    Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => Navigation()));
                   },
                   child: Icon(
                     Icons.ac_unit,
@@ -30,8 +31,7 @@ class MyHomePage extends StatelessWidget {
             RaisedButton(
               child: Text('Fade Second Page - Default'),
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).push(
                   PageTransition(
                     type: PageTransitionType.fade,
                     child: SecondPage(),
@@ -42,10 +42,9 @@ class MyHomePage extends StatelessWidget {
             RaisedButton(
               child: Text('Left To Right Transition Second Page'),
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).push(
                   PageTransition(
-                    type: PageTransitionType.leftToRight,
+                    type: PageTransitionType.rightToLeft,
                     child: SecondPage(),
                   ),
                 );
@@ -104,8 +103,7 @@ class MyHomePage extends StatelessWidget {
             RaisedButton(
               child: Text('Bottom to Top Second Page'),
               onPressed: () {
-                Navigator.push(
-                  context,
+                Navigator.of(context).push(
                   PageTransition(
                     curve: Curves.linear,
                     type: PageTransitionType.bottomToTop,

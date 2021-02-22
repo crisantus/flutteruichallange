@@ -14,7 +14,7 @@ class _HomePageState extends State<HomePage> {
     return WillPopScope(
       onWillPop: () {
         // Write some code to control things, when user press Back navigation button in device navigationBar
-        Navigator.of(context).push(MaterialPageRoute(builder: (context) => StarterPage()));
+        return Navigator.of(context).push(MaterialPageRoute(builder: (context) => StarterPage()));
       },
       child: Scaffold(
         appBar: AppBar(
